@@ -12,10 +12,9 @@ export const Counter = (props: CounterProps) => {
 
         <div className={'counter-container'}>
             <div className={counterClassName}>
-                { 'Count: '}
+                {'Count: '}
                 {props.count}
             </div>
         </div>
-
     )
 }

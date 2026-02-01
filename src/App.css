@@ -1,9 +1,14 @@
+body {
+    background-color: #282c34;
+    color: white;
+}
+
 .counter-container {
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: 1px solid white;
 }
 
 .buttons-container {
@@ -32,3 +37,6 @@ button {
     color: red;
 }
 
+.counter-set {
+    border: 1px solid white;
+}

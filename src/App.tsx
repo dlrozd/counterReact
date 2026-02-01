@@ -2,6 +2,7 @@ import './App.css'
 import {Buttons} from "./Buttons.tsx";
 import {Counter} from "./Counter.tsx";
 import {useState} from "react";
+import {SetValues} from "./SetValues.tsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
 
     return (
         <div>
+            <SetValues/>
             <Counter count={count}/>
             <Buttons count={count} increment={increment} reset={reset}/>
         </div>
