@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import {SetValues} from './SetValues';
 import {Counter} from './Counter';
-import {Button} from './Button';
+import {Button} from "antd";
 
 type SettingsType = {
     startValue: number
@@ -62,18 +62,24 @@ function App() {
                     />
                     <div className="buttons-container">
                         <Button
+                            size="large"
+                            type={'primary'}
                             onClick={() => count < tempSettings.maxValue && setCount(count + 1)}
                             title="inc"
                             disabled={count >= tempSettings.maxValue}
-                        />
+                        >inc</Button>
                         <Button
+                            size="large"
+                            type={'primary'}
                             onClick={() => setCount(tempSettings.startValue)}
                             title="reset"
-                        />
+                        >reset</Button>
                         <Button
+                            size="large"
+                            type={'primary'}
                             onClick={() => setIsSettingsMode(true)}
                             title="set"
-                        />
+                        >set</Button>
                     </div>
                 </div>
             )}
